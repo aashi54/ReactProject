@@ -3,6 +3,7 @@ import './Table.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
+
 const Table = ({ data , onDeleteData }) => {
   const [tableData, setTableData] = useState([]);
   // const [deletedItems, setDeletedItems] = useState([]);
