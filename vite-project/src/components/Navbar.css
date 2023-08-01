@@ -1,0 +1,95 @@
+
+
+nav{
+    display: flex;
+    justify-content : space-between;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 100px 1px 0px;
+    height: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1{
+    margin-top: -1px;
+    padding-left: 30px;
+}
+
+/* Reset styles (optional, not necessary for React) */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    background: #f3f8fa;
+  }
+  /* #242325 */
+  .btn1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background:#242325;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    /* text-transform: uppercase; */
+    overflow: hidden;
+    backdrop-filter: blur(4px); /* Apply a blur effect to the background */
+    transition: backdrop-filter 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .btn1::before {
+    /* content: '\002B'; */
+    content: 'Click to Add';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 0.7rem;
+    color:black; /* Adjust the opacity of the '+' sign */
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .btn1:hover::before {
+    opacity: 1;
+  }
+  
+  .btn1:hover {
+    backdrop-filter: blur(8px); /* Increase the blur effect on hover */
+    color: transparent; /* Hide the text on hover */
+    background: transparent; /* Remove the background on hover */
+   
+    border-color: black;
+  
+  }
+
+
+  .input-container{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 35px;
+  }
+  
+  
+
+
+
+
+
+
