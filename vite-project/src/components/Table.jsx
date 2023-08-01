@@ -3,7 +3,7 @@ import './Table.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-const Table = ({ data }) => {
+const Table = ({ data , onDeleteData }) => {
   const [tableData, setTableData] = useState([]);
   // const [deletedItems, setDeletedItems] = useState([]);
   const [editableRowIndex, setEditableRowIndex] = useState(null);
@@ -25,6 +25,8 @@ const Table = ({ data }) => {
   //   setEditableRowIndex(null); 
   // };
 
+  const [deldata, setDeldata] = useState('');
+
   useEffect(() => {
     setTableData(data);
   }, [data]);
@@ -35,6 +37,8 @@ const Table = ({ data }) => {
       newData.splice(index, 1);
       return newData;
     });
+    onDeleteData(index);
+   
     // setEditedData({}); 
     // setEditableRowIndex(null); 
   };

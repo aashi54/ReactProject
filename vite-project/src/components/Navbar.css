@@ -85,6 +85,22 @@ h1{
     width: 700px;
     height: 35px;
   }
+
+  /* Add some space between input fields and error messages */
+.input-container {
+  margin-bottom: 10px;
+  
+}
+
+/* Style the error messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  
+}
+
+
   
   
 
