@@ -20,7 +20,7 @@ h1{
     padding-left: 30px;
 }
 
-/* Reset styles (optional, not necessary for React) */
+
 * {
     box-sizing: border-box;
   }
@@ -44,9 +44,9 @@ h1{
     font-size: 1rem;
     font-weight: 700;
     color: #fff;
-    /* text-transform: uppercase; */
+    
     overflow: hidden;
-    backdrop-filter: blur(4px); /* Apply a blur effect to the background */
+    backdrop-filter: blur(4px); 
     transition: backdrop-filter 0.3s ease;
     border: 1px solid transparent;
   }
@@ -60,7 +60,7 @@ h1{
     transform: translate(-50%, -50%);
     opacity: 0;
     font-size: 0.7rem;
-    color:black; /* Adjust the opacity of the '+' sign */
+    color:black; 
     z-index: 1;
     transition: opacity 0.3s ease;
   }
@@ -86,13 +86,12 @@ h1{
     height: 35px;
   }
 
-  /* Add some space between input fields and error messages */
+  
 .input-container {
   margin-bottom: 10px;
   
 }
 
-/* Style the error messages */
 .error-message {
   color: red;
   font-size: 12px;
